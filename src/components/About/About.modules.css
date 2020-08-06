@@ -1,0 +1,23 @@
+
+.Container{
+    margin-top: 70px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.IntroText{
+    display: flex;
+    flex-direction: row;
+}
+.IntroText p{
+    flex: 1 1 50%;
+    margin-right: 50px;
+}
+
+.IntroText img{
+    flex: 1 1 auto;
+}
+.game-teaser-gif{
+    height: 400px;
+    width: 300px;
+    margin-top: 15px;
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.NavBar{
+    padding: 5px;
+    background-image: url('https://images8.alphacoders.com/939/thumb-1920-939716.png');
+    border: 2px solid black;
+    height: 60px;
+    font-family: 'Press Start 2P', cursive;
+}
+.NavElements{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.NavElement{
+    margin: 5px 20px;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.NavElement:visited{
+    text-decoration: none;
+}
+
+.NavElement:hover{
+    color: orange;
+}
+
+Link{
+    text-decoration: none;
+}
+

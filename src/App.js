@@ -1,22 +1,28 @@
 import React from 'react';
-import style from './App.modules.css';
-import Layout from './Layout/Layout';
+import './App.css';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Navbar from './Layout/Navbar/Navbar';
+import Footer from './Layout/Footer/Footer';
+import Team from './components/Team/Team';
+import Contact from './components/Contact/Contact';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
-    <div>
-      <Layout>
-        <h1 className={style.PageHeader}>Home</h1>
-          <p className={style.IntroText}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
-              Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      <BrowserRouter>
+          <Navbar/>
+              <Switch>
+                  <Route exact path='/'><Home/></Route>
+                  <Route path='/about'><About/></Route>
+                  <Route path='/team'><Team/></Route>
+                  <Route path='/contact'><Contact/></Route>
+              </Switch>
+            <Footer/>
+      </BrowserRouter>
 
-              Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-
-              Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer</p>
-      </Layout>
-    </div>
   );
 }
 

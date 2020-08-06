@@ -1,0 +1,36 @@
+.Container{
+    margin-top: 70px;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+input{
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px ;
+}
+textarea{
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px ;
+}
+.Newsletter{
+    display: flex;
+    flex-direction: row;
+}
+
+.Submit{
+    width: 70px;
+    height: 40px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(193, 147, 179);
+    color: white;
+}

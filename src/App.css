@@ -1,8 +1,11 @@
-.PageHeader{
-  color: salmon;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+ul{
+  list-style: none;
 }
 
-.IntroText{
-
+h1{
+  font-family: 'Press Start 2P', cursive;
 }
 

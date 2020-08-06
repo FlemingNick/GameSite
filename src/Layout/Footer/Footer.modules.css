@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+footer{
+    display: flex;
+    margin-top: 200px;
+    flex-direction: row;
+    width: 100vw;
+    background-image: url('https://images8.alphacoders.com/939/thumb-1920-939716.png');
+    background-position: bottom;
+    padding-bottom: 40px;
+    bottom: 0;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1;
+    align-items: center;
+}
+
+footer li {
+    margin-top: 40px;
+}
+
+footer li:hover{
+    color: orange;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: orange;
+}
